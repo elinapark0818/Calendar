@@ -20,8 +20,34 @@
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
+          aspectRatio: 1.35,
+          selectable: true,
           initialView: 'dayGridMonth',
-          
+          contentHeight: '40em',
+          headerToolbar: {
+          start: "",
+          center: "prev title next",
+          end: "today",
+          },
+          fixedWeekCount: false,
+          showNonCurrentDates: false,
+          titleFormat: function(date) {
+            return `${date.date.year}년 ${date.date.month + 1}월`;
+          },
+          dayHeaderContent: function (date) {
+            let weekList = ["일", "월", "화", "수", "목", "금", "토"];
+            return weekList[date.dow];
+          },
+          dateClick: function (dateClickInfo) {
+          const fcDayElements = document.querySelectorAll(
+            ".fc-daygrid-day.fc-day"
+          );
+          fcDayElements.forEach((element, key, parent) => {
+            element.style.backgroundColor = "";
+          });
+          dateClickInfo.dayEl.style.backgroundColor = "#787878";
+          },
+      
         });
         calendar.render();
       });
@@ -29,7 +55,7 @@
     
   </head>
   <body>
-    <div id='calendar' style='width: 30em;'></div>
+    <div id='calendar' style='width: 50em;float: right;'></div>
     <div id="root"></div>
     
   </body>
