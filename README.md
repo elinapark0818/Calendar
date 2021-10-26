@@ -20,13 +20,23 @@
 
         <div id='calendar'></div>
 
-### 기능들
+### 같이 사용하면 좋은 기능들
+
+<br/>
 
 aspectRatio : 달력의 가로세로 비율을 설정한다.
+
+<br/> 
 selectable : 드래그로 날짜를 여러개 선택한다.
-contentHeight : 달력 바디부분의 높이를 조정한다.
-headerToolbar : 달력 헤더부분을 설정한다.
-showNonCurrentDates : 해당 월이 아닐경우의 요일표시여부를 설정한다.
-fixedWeekCount : true의 경우 6주로 고정되어 출력되고, false의 경우 해당 월에 있는 주기만큼 동적으로 출력된다.(4~6주)
-dayHeaderContent : 요일표기방식을 설정한다.
-locale : 언어를 설정한다.
+
+<br/> contentHeight : 달력 바디부분의 높이를 조정한다.
+
+<br/> headerToolbar : 달력 헤더부분을 설정한다.
+
+<br/> showNonCurrentDates : 해당 월이 아닐경우의 요일표시여부를 설정한다.
+
+<br/> fixedWeekCount : true의 경우 6주로 고정되어 출력되고, false의 경우 해당 월에 있는 주기만큼 동적으로 출력된다.(4~6주)
+
+<br/> dayHeaderContent : 요일표기방식을 설정한다.
+
+<br/> locale : 언어를 설정한다.
