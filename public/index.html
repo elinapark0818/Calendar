@@ -11,10 +11,9 @@
     />
     
     <title>Full Calendar</title>
-    <link rel="stylesheet" type="text/css" href="fullcalendar.css" />
-    <link rel="stylesheet" type="text/css" href="fullcalendar.min.css" />
-    <script src='fullcalendar.js'></script>
-    <script src='ko.js'></script>
+    <link rel="stylesheet" type="text/css" href="fullcalendar/main.css" />
+    <script src='fullcalendar/main.js'></script>
+    <script src='fullcalendar/ko.js'></script>
     
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -27,7 +26,10 @@
           headerToolbar: {
           start: "",
           center: "prev title next",
-          end: "today",
+          end: 'dayGridMonth,timeGridWeek,timeGridDay'
+          },
+          dateClick: function() {
+            alert('a day has been clicked!');
           },
           fixedWeekCount: false,
           showNonCurrentDates: false,
