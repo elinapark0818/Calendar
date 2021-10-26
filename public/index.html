@@ -23,7 +23,7 @@
           aspectRatio: 1.35,
           selectable: true,
           initialView: 'dayGridMonth',
-          contentHeight: '40em',
+          contentHeight: '30em',
           headerToolbar: {
           start: "",
           center: "prev title next",
@@ -55,8 +55,10 @@
     
   </head>
   <body>
-    <div id='calendar' style='width: 50em;float: right;'></div>
-    <div id="root"></div>
+    <div style="display: flex;margin:1em;">
+      <div id='calendar' style='width: 35em;'></div>
+      <div id="root" style="margin: 1em;"></div>
+    </div>
     
   </body>
 </html>
